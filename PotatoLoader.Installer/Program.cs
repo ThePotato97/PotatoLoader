@@ -326,11 +326,11 @@ namespace PotatoLoader.Installer
                 SetDisplayText("Downloading Dependencies...");
                 string tempfilepath4 = TempFileCache.CreateFile();
                 bool run_fallback = false;
-                try { webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/MelonLoader/raw/master/MelonLoader/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
+                try { webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/ThePotato97/PotatoLoader/raw/master/ThePotato97/PotatoLoader/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
                 if (run_fallback)
                 {
                     string subver = mainForm.UnityVersion.Substring(0, mainForm.UnityVersion.LastIndexOf("."));
-                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/MelonLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
+                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/ThePotato97/PotatoLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
                     if (data.Count > 0)
                     {
                         List<string> versionlist = new List<string>();
@@ -344,7 +344,7 @@ namespace PotatoLoader.Installer
                         {
                             versionlist = versionlist.OrderBy(x => int.Parse(x.Split(new char[] { '.' })[2])).ToList();
                             string latest_version = versionlist.Last();
-                            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/MelonLoader/raw/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
+                            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/ThePotato97/PotatoLoader/raw/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
                             while (webClient.IsBusy) { }
                         }
                     }
