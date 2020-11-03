@@ -1,4 +1,4 @@
-   PotatoLoader
+   MelonLoader
    Copyright 2020 Lava Gang
    
    This product contains software (https://github.com/HerpDerpinstine/MelonLoader) developed

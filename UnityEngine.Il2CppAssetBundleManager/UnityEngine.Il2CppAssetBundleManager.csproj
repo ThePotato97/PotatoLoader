@@ -17,7 +17,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>$(SolutionDir)Output\$(Configuration)\PotatoLoader\Managed\</OutputPath>
+    <OutputPath>$(SolutionDir)Output\$(Configuration)\MelonLoader\Managed\</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -26,7 +26,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <OutputPath>$(SolutionDir)Output\$(Configuration)\PotatoLoader\Managed\</OutputPath>
+    <OutputPath>$(SolutionDir)Output\$(Configuration)\MelonLoader\Managed\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
@@ -76,8 +76,8 @@
     <Compile Include="Main.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PotatoLoader.ModHandler\PotatoLoader.ModHandler.csproj">
-      <Name>PotatoLoader.ModHandler</Name>
+    <ProjectReference Include="..\MelonLoader.ModHandler\MelonLoader.ModHandler.csproj">
+      <Name>MelonLoader.ModHandler</Name>
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿using PotatoLoader;
+﻿using MelonLoader;
 
 namespace TestMod
 {

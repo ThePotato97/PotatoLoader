@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using PotatoLoader;
+using MelonLoader;
 
 [assembly: AssemblyTitle(TestMod.BuildInfo.Description)]
 [assembly: AssemblyDescription(TestMod.BuildInfo.Description)]

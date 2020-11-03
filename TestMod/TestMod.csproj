@@ -34,9 +34,9 @@
     <Compile Include="Main.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PotatoLoader.ModHandler\PotatoLoader.ModHandler.csproj">
+    <ProjectReference Include="..\MelonLoader.ModHandler\MelonLoader.ModHandler.csproj">
       <Project>{3c4056ab-1d07-43fc-a93d-0aa72446da03}</Project>
-      <Name>PotatoLoader.ModHandler</Name>
+      <Name>MelonLoader.ModHandler</Name>
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
