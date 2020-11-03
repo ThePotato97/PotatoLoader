@@ -34,10 +34,10 @@
     <Compile Include="Main.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MelonLoader.ModHandler\MelonLoader.ModHandler.csproj">
+    <ProjectReference Include="..\PotatoLoader.ModHandler\PotatoLoader.ModHandler.csproj">
       <Project>{3c4056ab-1d07-43fc-a93d-0aa72446da03}</Project>
-      <Name>MelonLoader.ModHandler</Name>
-	  <Private>false</Private>
+      <Name>PotatoLoader.ModHandler</Name>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MelonLoader", "MelonLoader\MelonLoader.vcxproj", "{88DCBE83-3D23-48E3-BA8F-8DEC31A91442}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PotatoLoader", "PotatoLoader\PotatoLoader.vcxproj", "{88DCBE83-3D23-48E3-BA8F-8DEC31A91442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.ModHandler", "MelonLoader.ModHandler\MelonLoader.ModHandler.csproj", "{3C4056AB-1D07-43FC-A93D-0AA72446DA03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.ModHandler", "PotatoLoader.ModHandler\PotatoLoader.ModHandler.csproj", "{3C4056AB-1D07-43FC-A93D-0AA72446DA03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMod", "TestMod\TestMod.csproj", "{788BC472-59F7-46F6-B760-65C18BA74389}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "version", "version\version.vcxproj", "{D4E23F47-15F3-4FD5-B7E2-A8D40E94CAF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Support.Il2Cpp", "MelonLoader.Support.Il2Cpp\MelonLoader.Support.Il2Cpp.csproj", "{4487DF38-2921-418A-A015-7DDA1C2BC5E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.Support.Il2Cpp", "PotatoLoader.Support.Il2Cpp\PotatoLoader.Support.Il2Cpp.csproj", "{4487DF38-2921-418A-A015-7DDA1C2BC5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Support.Mono", "MelonLoader.Support.Mono\MelonLoader.Support.Mono.csproj", "{E0E877DF-E569-4E3F-8D8B-5B5945E7A5AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.Support.Mono", "PotatoLoader.Support.Mono\PotatoLoader.Support.Mono.csproj", "{E0E877DF-E569-4E3F-8D8B-5B5945E7A5AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Support.Mono.Pre2017", "MelonLoader.Support.Mono.Pre2017\MelonLoader.Support.Mono.Pre2017.csproj", "{1522ED55-C1BF-4057-86ED-BD482462A498}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.Support.Mono.Pre2017", "PotatoLoader.Support.Mono.Pre2017\PotatoLoader.Support.Mono.Pre2017.csproj", "{1522ED55-C1BF-4057-86ED-BD482462A498}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49B47EEB-1061-49AF-83F3-B32377B08F3E}"
 	ProjectSection(SolutionItems) = preProject
@@ -25,11 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MelonLoader.Installer", "MelonLoader.Installer\MelonLoader.Installer.csproj", "{17AFE406-2361-4849-9B15-CB03AEF5E9F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotatoLoader.Installer", "PotatoLoader.Installer\PotatoLoader.Installer.csproj", "{17AFE406-2361-4849-9B15-CB03AEF5E9F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.AssemblyGenerator", "MelonLoader.AssemblyGenerator\MelonLoader.AssemblyGenerator.csproj", "{84B12E10-41B3-479C-87A6-8CE5D8C82C2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.AssemblyGenerator", "PotatoLoader.AssemblyGenerator\PotatoLoader.AssemblyGenerator.csproj", "{84B12E10-41B3-479C-87A6-8CE5D8C82C2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Support.Mono.Pre2017.2", "MelonLoader.Support.Mono.Pre2017.2\MelonLoader.Support.Mono.Pre2017.2.csproj", "{57CA4F56-8E59-47EE-BEAC-28EC720B2B27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotatoLoader.Support.Mono.Pre2017.2", "PotatoLoader.Support.Mono.Pre2017.2\PotatoLoader.Support.Mono.Pre2017.2.csproj", "{57CA4F56-8E59-47EE-BEAC-28EC720B2B27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPlugin", "TestPlugin\TestPlugin.csproj", "{F41EC84C-6465-4449-B2F6-79535171265B}"
 EndProject

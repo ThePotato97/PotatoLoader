@@ -319,7 +319,7 @@
 ### v0.2.0 Open-Beta:
 
 1. Fixed Issue with the Console still showing as Closed-Beta.
-2. Fixed Issue with not having MelonLoader.ModHandler.3.5.dll included in the Release zip.
+2. Fixed Issue with not having PotatoLoader.ModHandler.3.5.dll included in the Release zip.
 3. Fixed support for 2018.4.11f1 and Ori and the Will of the Wisps.  (Credits to Hector ^.^)
 4. Added 2018.4.11f1 Unity Dependencies.  (Credits to Hector ^.^)
 5. Removed Unity Dependencies from Release Build.  (No Longer Needed)
@@ -333,9 +333,9 @@
 13. Fixed Issue with MelonCoroutines when using Non-Yielding Coroutines.  (Credits to Slaynash :3)
 14. Added Support for Method Unstripping through Il2CppAssemblyUnhollower to MelonLoader.AssemblyGenerator.
 15. Replaced the Doorstop winmm.dll with version.dll.
-16. Fixed Compatibility with Il2Cpp Games for 0Harmony in MelonLoader.ModHandler.  (Credits to zeobviouslyfakeacc :D)
+16. Fixed Compatibility with Il2Cpp Games for 0Harmony in PotatoLoader.ModHandler.  (Credits to zeobviouslyfakeacc :D)
 17. Fixed Issue with 0Harmony not Unpatching Methods when Unloading.
-18. Fixed Incompatibility Issue between 0Harmony in MelonLoader.ModHandler and Mono Game Support.
+18. Fixed Incompatibility Issue between 0Harmony in PotatoLoader.ModHandler and Mono Game Support.
 19. Added Event Fix for knah's Unhollower Logging.
 20. Fixed Null Reference Exception Error when using MethodInfo of Generated Assembly Methods for 0Harmony.
 21. Removed NET_SDK.
@@ -371,42 +371,42 @@
 
 ### v0.1.0 Open-Beta:
 
-1. Moved Exports in MelonLoader.ModHandler to Mono Internal Calls.
+1. Moved Exports in PotatoLoader.ModHandler to Mono Internal Calls.
 2. Cleaned up Hooking for MelonLoader Internals.
 3. Added a new cleaner and faster Internal Call Resolver for an Assembly Generator Test.
 4. Added 2018.4.19f1 Unity Dependencies.
-5. Added additional check for MelonLoader.ModHandler needing to be built with .NET 3.5.
+5. Added additional check for PotatoLoader.ModHandler needing to be built with .NET 3.5.
 6. Added 2018.4.20f1 Unity Dependencies.
 7. Changed lists to arrays for caching classes, fields, methods, events, and etc.  (Credits to Kronik ^.^)
 8. Changed foreach to statements to for statements for faster iteration.  (Credits to Kronik ^.^)
 9. Made certain fields "readonly" (Name, Flags, etc) as it won't be reassigned.  (Credits to Kronik ^.^)
 10. Made SDK and Imports class static.  (Credits to Kronik ^.^)
-11. Cleaned up MelonLoader.ModHandler to use less Linq when possible for improved performance.  (Credits to Kronik ^.^)
+11. Cleaned up PotatoLoader.ModHandler to use less Linq when possible for improved performance.  (Credits to Kronik ^.^)
 12. Added CreateInstance method to Il2Cpp_Class in NET_SDK.Reflection.  (Credits to Kronik ^.^)
 13. Fixed SystemTypeToIl2CppClass in NET_SDK.Il2Cpp.
 14. Cleaned up TestMod.
 15. Added VRChat_OnUiManagerInit for VRChat Mods.
-16. Made MelonModGameAttribute work as intended and MelonLoader.ModHandler will now only load Mods marked as Compatible or Universal.
-17. Temporarily removed the Guid attribute from the AssemblyInfo of both TestMod and MelonLoader.ModHandler.
+16. Made MelonModGameAttribute work as intended and PotatoLoader.ModHandler will now only load Mods marked as Compatible or Universal.
+17. Temporarily removed the Guid attribute from the AssemblyInfo of both TestMod and PotatoLoader.ModHandler.
 18. MelonMod now properly caches their respective MelonModInfoAttribute and MelonModGameAttribute.
 19. Fixed PointerUtils::FindAllPattern.
 20. OnLevelWasLoaded, OnLevelWasInitialized, OnUpdate, OnFixedUpdate, OnLateUpdate, and OnGUI have been fixed and now function properly.
 21. Cleaned up LoadLibraryW Hook.
-22. Cleaned up and Renamed Exports in MelonLoader.ModHandler.
+22. Cleaned up and Renamed Exports in PotatoLoader.ModHandler.
 23. Added a HookManager system.
 24. Cleaned up and Combined all Internal Hooking into HookManager.cpp and HookManager.h improving compile time.
 25. Cleaned up and removed unused or otherwise unneeded includes improving compile time.
 26. Used regions to further clean up and organize HookManager.cpp.
 27. Added Status Log for when detecting if a Mod is Universal, Compatible, or Incompatible.
-28. Cleaned up the Mod Loading functionality of MelonLoader.ModHandler.
+28. Cleaned up the Mod Loading functionality of PotatoLoader.ModHandler.
 29. Fixed Issue with the Compatibility Check when using multiple MelonModGameAttribute.
 30. Fixed Issue with OnLevelWasLoaded and OnLevelWasInitialized getting the wrong Scene Index and only running once then never again.
-31. Upgraded MelonLoader.ModHandler and TestMod to .NET v4.7.2.  (As requested by Emilia :D)
+31. Upgraded PotatoLoader.ModHandler and TestMod to .NET v4.7.2.  (As requested by Emilia :D)
 32. Made MelonModController use directly invokable delegates for faster invoking.  (Credits to Kronik ^.^)
 33. Removed Unneeded Caching of MethodInfo in MelonModController.
 34. Added mono-2.0-boehm.dll to Mono Check.
 35. Added --melonloader.rainbow and --melonloader.randomrainbow as Launch Options.  (As requested by Hordini :3)
-36. Redesigned the Logging system to be unified between MelonLoader and MelonLoader.ModHandler.
+36. Redesigned the Logging system to be unified between MelonLoader and PotatoLoader.ModHandler.
 37. Colorized Errors in both Consoles.
 38. Added the ability for Mods to set a Color when Logging.
 39. Fixed Issue with --melonloader.rainbow and --melonloader.randomrainbow not working when using --melonloader.console.
@@ -425,12 +425,12 @@
 52. Added 2019.3.6f1 Unity Dependencies.
 53. Fixed Internal Failure issues with RotMG Exalt and Unity 2019.3.6f1.
 54. Fixed Internal Failure issues with Pistol Whip and Unity 2019.2.0f1.
-55. Fixed Issue with MelonLoader.ModHandler complaining about Mod Libraries.
+55. Fixed Issue with PotatoLoader.ModHandler complaining about Mod Libraries.
 56. Fixed Issue with MelonCoroutines processing a yield of null as the same as WaitForFixedUpdate.
 57. Made MelonMod use directly invokable virtuals and overrides for faster invoking.  (As requested by knah :3)
-58. Removed MelonModController from MelonLoader.ModHandler.
-59. Made MelonLoader.ModHandler look for the MelonMod subclass in the Mod's MelonModInfoAttribute instead of searching the entire Assembly.  (As requested by knah :3)
-60. Fixed Issue with Logger Imports in MelonLoader.ModHandler being passed garbage strings.
+58. Removed MelonModController from PotatoLoader.ModHandler.
+59. Made PotatoLoader.ModHandler look for the MelonMod subclass in the Mod's MelonModInfoAttribute instead of searching the entire Assembly.  (As requested by knah :3)
+60. Fixed Issue with Logger Imports in PotatoLoader.ModHandler being passed garbage strings.
 
 ---
 
@@ -445,7 +445,7 @@
 7. Fixed Issue with MelonModLogger not getting the Mod Name when used outside of the main class.
 8. FileInfo in the TestMod has been renamed to BuildInfo so it won't conflict with the System.IO.FileInfo class.
 9. Added 0Harmony Integration and Support.
-10. Modified MelonLoader.ModHandler to use a Component based system in MUPOT Mode and Mono based games.
+10. Modified PotatoLoader.ModHandler to use a Component based system in MUPOT Mode and Mono based games.
 11. Fixed Issue preventing OnUpdate from being called in MUPOT Mode and Mono based games.
 12. Fixed Issue preventing OnApplicationQuit from being called in MUPOT Mode and Mono based games.
 13. Fixed Conflict issue triggering Unity's Single Instance function in MUPOT Mode.
@@ -453,7 +453,7 @@
 15. Bug that prevented Debug Compilation is now fixed.
 16. Fixed Issue that caused Unity Crash Handler to initialize MelonLoader twice.
 17. Fixed Runtime Initialization issue with Audica that caused crashes.
-18. Fixed Execution Order of MelonLoader.ModHandler.
+18. Fixed Execution Order of PotatoLoader.ModHandler.
 19. Fixed Issue with Mono Game Support due to Mono DLL naming.
 20. Fixed Issue with Internal Calls through MUPOT Mode.
 21. Added better Mod Exception Handling and Logging.
@@ -463,17 +463,17 @@
 25. Added Dependencies for Unity 2018.1.6f1.
 26. Added Dependencies for Unity 2019.2.0f1.
 27. Fixed Incompatibility issue with Unity Dependencies between x86 and x64.
-28. Added Log in MelonLoader.ModHandler for Unity Version.
+28. Added Log in PotatoLoader.ModHandler for Unity Version.
 29. General Code Cleanup.
 30. Fixed OnApplicationQuit not working without MUPOT Mode.
-31. Fixed Mono Game Support for games that don't use MonoBleedingEdge.  (MelonLoader.ModHandler and Mods must be compiled with .NET 3.5 Framework)
+31. Fixed Mono Game Support for games that don't use MonoBleedingEdge.  (PotatoLoader.ModHandler and Mods must be compiled with .NET 3.5 Framework)
 32. Fixed Execution Order when using MUPOT Mode.
 
 ---
 
 ### v0.0.2 Closed-Beta:
 
-1. Added NET_SDK to be built into MelonLoader.ModHandler as the designated Il2Cpp Wrapper.
+1. Added NET_SDK to be built into PotatoLoader.ModHandler as the designated Il2Cpp Wrapper.
 2. Fixed Issue with Mods and Logs folders not being in the correct place next to the game's exe.
 3. Fixed Issue with the ModPrefs not calling the OnModSettingsApplied method of Mods.
 4. Replaced old ModPrefs debug log message left in from my VRChat mod.
@@ -487,15 +487,15 @@
 12. Added TestMod to Project Files.
 13. Added Attribute StackTrace System to Logger.  (As requested by Camobiwon :3)
 14. Replaced Spaces in Names for the Attribute StackTrace System with Underscores.
-15. Fixed the bug that caused the Logger from MelonLoader.ModHandler to not properly output when using the Debug Console.
+15. Fixed the bug that caused the Logger from PotatoLoader.ModHandler to not properly output when using the Debug Console.
 16. Added SystemTypeToIl2CppClass method to NET_SDK.Il2Cpp.
 17. Crash Issue with Game.DontDestroyOnLoad has been fixed and it now works.
 18. Fixed Il2Cpp_Field where SetValue does not function on a instance object.  (Thanks DubyaDude ^.^)
 19. Fixed Compile Version conflict with the 2 Consoles.  
-MelonLoader [DEBUG] & MelonLoader.ModHandler [RELEASE]  =  Debug Console  
-MelonLoader [RELEASE] & MelonLoader.ModHandler [DEBUG]  =  Normal Console  
-MelonLoader [DEBUG] & MelonLoader.ModHandler [DEBUG]  =  Debug Console  
-MelonLoader [RELEASE] & MelonLoader.ModHandler [RELEASE]  =  Left up to the Launch Options  
+MelonLoader [DEBUG] & PotatoLoader.ModHandler [RELEASE]  =  Debug Console  
+MelonLoader [RELEASE] & PotatoLoader.ModHandler [DEBUG]  =  Normal Console  
+MelonLoader [DEBUG] & PotatoLoader.ModHandler [DEBUG]  =  Debug Console  
+MelonLoader [RELEASE] & PotatoLoader.ModHandler [RELEASE]  =  Left up to the Launch Options  
 
 ---
 
