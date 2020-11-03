@@ -139,7 +139,7 @@ namespace PotatoLoader.AssemblyGenerator
                 string subver = unityVersion.Substring(0, unityVersion.LastIndexOf("."));
                 try
                 {
-                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/ThePotato97/PotatoLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
+                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/ThePotato97/PotatoLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
                     if (data.Count > 0)
                     {
                         List<string> versionlist = new List<string>();
